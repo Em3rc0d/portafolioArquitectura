@@ -10,6 +10,7 @@ import { ReflexionesComponent } from './components/reflexiones/reflexiones.compo
 
 export const routes: Routes = [
     {path: '', redirectTo: 'inicio', pathMatch: 'full'},
+    {path: '**', redirectTo: 'inicio', pathMatch: 'full'},
     {path: 'inicio', component: AppComponent},
     {path: 'indice', component: IndiceComponent},
     {path: 'resultadoAprendizaje1', component: ResultadoA1Component},
@@ -17,6 +18,5 @@ export const routes: Routes = [
     {path: 'resultadoAprendizaje3', component: ResultadoA3Component},
     {path: 'resultadoAprendizaje4', component: ResultadoA4Component},
     {path: 'lecturas', component: LecturasComponent},
-    {path: 'reflexiones', component: ReflexionesComponent},
-    {path: '**', redirectTo: 'inicio', pathMatch: 'full'}
+    {path: 'reflexiones', component: ReflexionesComponent}
 ];
