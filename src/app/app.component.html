@@ -1,24 +1,29 @@
-<div class="container mx-auto relative p-4 h-screen w-screen max-h-screen overflow-y-visible overflow-x-visible text-center">
-  <div class="bg-white rounded-lg shadow-lg ">
-    <div class="p-4 bg-gray-200">
-      <h1 class="text-2xl font-bold">Evaluación de los aprendizajes</h1>
-      <h2 class="text-lg">Alumna: Xiomara Solano (*codigo)</h2>
-    </div>
-    <div class="p-4">
-      <p class="font-bold">Contenidos:</p>
-      <p>Este portafolio presenta los siguientes contenidos</p>
-      <div class="flex flex-wrap gap-2 mt-2 justify-center">
-        <a routerLink="/indice" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Índice</a>
-        <a routerLink="/resultadoAprendizaje1" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Resultado de aprendizaje 1</a>
-        <a routerLink="/resultadoAprendizaje2" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Resultado de aprendizaje 2</a>
-        <a routerLink="/resultadoAprendizaje3" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Resultado de aprendizaje 3</a>
-        <a routerLink="/resultadoAprendizaje4" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Resultado de aprendizaje 4</a>
-        <a routerLink="/lecturas" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Lecturas</a>
-        <a routerLink="/reflexiones" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Reflexiones</a>
+<div class="container mx-auto relative p-4 h-screen w-screen max-h-screen overflow-y-visible overflow-x-visible text-center items-center">
+  <div class="flex flex-col space-y-4">
+    <div class="bg-white rounded-lg shadow-lg ">
+      <div class="p-4 bg-gray-200">
+        <h1 class="text-2xl font-bold">Evaluación de los aprendizajes</h1>
+        <h2 class="text-lg">Alumna: Xiomara Solano (*codigo)</h2>
+      </div>
+      <div class="p-4">
+        <p class="font-bold">Contenidos:</p>
+        <p>Este portafolio presenta los siguientes contenidos</p>
+        <div class="flex flex-wrap gap-2 mt-2 justify-center">
+          <a routerLink="/indice" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Índice</a>
+          <a routerLink="/resultadoAprendizaje1" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Resultado de aprendizaje 1</a>
+          <a routerLink="/resultadoAprendizaje2" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Resultado de aprendizaje 2</a>
+          <a routerLink="/resultadoAprendizaje3" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Resultado de aprendizaje 3</a>
+          <a routerLink="/resultadoAprendizaje4" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Resultado de aprendizaje 4</a>
+          <a routerLink="/lecturas" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Lecturas</a>
+          <a routerLink="/reflexiones" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Reflexiones</a>
+        </div>
       </div>
     </div>
   </div>
-  <router-outlet></router-outlet>
-  <br>
-  <app-footer></app-footer>
+  <div  class="relative">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="relative">
+    <app-footer></app-footer>
+  </div>
 </div>
