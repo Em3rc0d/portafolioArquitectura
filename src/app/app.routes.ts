@@ -9,7 +9,7 @@ import { LecturasComponent } from './components/lecturas/lecturas.component';
 import { ReflexionesComponent } from './components/reflexiones/reflexiones.component';
 
 export const routes: Routes = [
-    {path: '', redirectTo: 'inicio', pathMatch: 'full'},
+    {path: '', redirectTo: 'indice', pathMatch: 'full'},
     {path: 'inicio', component: AppComponent},
     {path: 'indice', component: IndiceComponent},
     {path: 'resultadoAprendizaje1', component: ResultadoA1Component},
@@ -18,5 +18,5 @@ export const routes: Routes = [
     {path: 'resultadoAprendizaje4', component: ResultadoA4Component},
     {path: 'lecturas', component: LecturasComponent},
     {path: 'reflexiones', component: ReflexionesComponent},
-    {path: '**', redirectTo: 'inicio', pathMatch: 'full'},
+    {path: '**', redirectTo: 'indice', pathMatch: 'full'},
 ];
