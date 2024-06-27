@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ResultadoA1Component } from './components/resultado-a1/resultado-a1.component';
 import { ResultadoA2Component } from './components/resultado-a2/resultado-a2.component';
@@ -8,8 +9,8 @@ import { IndiceComponent } from './components/indice/indice.component';
 import { LecturasComponent } from './components/lecturas/lecturas.component';
 import { ReflexionesComponent } from './components/reflexiones/reflexiones.component';
 
-export const routes: Routes = [
-    {path: '', redirectTo: 'inicio', pathMatch: 'full'},
+const routes: Routes = [
+  {path: '', redirectTo: 'inicio', pathMatch: 'full'},
     {path: 'inicio', component: AppComponent},
     {path: 'indice', component: IndiceComponent},
     {path: 'resultadoAprendizaje1', component: ResultadoA1Component},
@@ -20,3 +21,9 @@ export const routes: Routes = [
     {path: 'reflexiones', component: ReflexionesComponent},
     {path: '**', redirectTo: 'indice', pathMatch: 'full'}
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
