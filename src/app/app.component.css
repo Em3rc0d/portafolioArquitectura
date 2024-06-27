@@ -1,0 +1,19 @@
+/* Estilos para pantallas pequeñas */
+@media (max-width: 640px) {
+    .container {
+      padding: 2rem; /* Ajusta el espacio interno para pantallas pequeñas */
+    }
+    
+    .bg-white {
+      width: 100%; /* Ajusta el ancho del contenedor principal */
+    }
+    
+    .flex {
+      flex-direction: column; /* Cambia a disposición de columna para los enlaces */
+    }
+    
+    .absolute {
+      position: static; /* Elimina posición absoluta para el router-outlet */
+    }
+  }
+  
