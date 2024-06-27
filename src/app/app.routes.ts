@@ -18,5 +18,5 @@ export const routes: Routes = [
     {path: 'resultadoAprendizaje4', component: ResultadoA4Component},
     {path: 'lecturas', component: LecturasComponent},
     {path: 'reflexiones', component: ReflexionesComponent},
-    {path: '**', redirectTo: 'indice', pathMatch: 'full'}
+    {path: '**', redirectTo: 'inicio', pathMatch: 'full'}
 ];
